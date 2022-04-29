@@ -1,0 +1,108 @@
+{
+<<<<<<< HEAD
+  "events": [
+    {
+      "name": "Regional Catan",
+      "company": "Devir",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "shortdescription": "Evento em Abril.",
+      "id": 1,
+      "image": "/img/catan.jpg"
+    },
+    {
+      "name": "Mundial Essen",
+      "company": "Essen Alemanha",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "shortdescription": "Evento em Maio.",
+      "id": 2,
+      "image": "/img/essen.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Regional Pokémon",
+      "company": "Pokémon Company",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "shortdescription": "Evento em Junho.",
+      "image": "/img/pokemon.png"
+    },
+    {
+      "id": 4,
+      "name": "Diversão Offline",
+      "company": "Devir",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "shortdescription": "Evento em Julho.",
+      "image": "/img/diversao.png"
+=======
+  "courses": [
+    {
+      "name": "Curso de Javascript",
+      "image": "/images/programacao.jpg",
+      "coordinator": "Armênio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at eros convallis, congue justo ut, iaculis ex. Proin vel sollicitudin purus. Sed id blandit risus. In vitae ultricies nisi. Phasellus nibh orci, pellentesque sit amet molestie sed, condimentum id est. Pellentesque a iaculis est. Suspendisse potenti. Integer sed nisl laoreet, rhoncus ex eu, auctor tellus. Fusce nunc nibh, tempus id hendrerit eu, vestibulum in libero. Aenean a justo ac urna tempus elementum non ac ligula. Nullam aliquet, lectus posuere vehicula ullamcorper, libero orci sodales risus, in tincidunt urna libero quis turpis. Donec sit amet neque mattis, lacinia ligula a, ornare felis. Mauris malesuada sed purus nec tempus.",
+      "shortDescription": "Aprenda Javascript do básico ao avançado.",
+      "id": 1
+    },
+    {
+      "name": "Curso de Python",
+      "image": "/images/programacao.jpg",
+      "coordinator": "Armênio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at eros convallis, congue justo ut, iaculis ex. Proin vel sollicitudin purus. Sed id blandit risus. In vitae ultricies nisi. Phasellus nibh orci, pellentesque sit amet molestie sed, condimentum id est. Pellentesque a iaculis est. Suspendisse potenti. Integer sed nisl laoreet, rhoncus ex eu, auctor tellus. Fusce nunc nibh, tempus id hendrerit eu, vestibulum in libero. Aenean a justo ac urna tempus elementum non ac ligula. Nullam aliquet, lectus posuere vehicula ullamcorper, libero orci sodales risus, in tincidunt urna libero quis turpis. Donec sit amet neque mattis, lacinia ligula a, ornare felis. Mauris malesuada sed purus nec tempus.",
+      "shortDescription": "Aprenda Python do básico ao avançado.",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Curso de Docker",
+      "image": "/images/programacao.jpg",
+      "coordinator": "Armênio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at eros convallis, congue justo ut, iaculis ex. Proin vel sollicitudin purus. Sed id blandit risus. In vitae ultricies nisi. Phasellus nibh orci, pellentesque sit amet molestie sed, condimentum id est. Pellentesque a iaculis est. Suspendisse potenti. Integer sed nisl laoreet, rhoncus ex eu, auctor tellus. Fusce nunc nibh, tempus id hendrerit eu, vestibulum in libero. Aenean a justo ac urna tempus elementum non ac ligula. Nullam aliquet, lectus posuere vehicula ullamcorper, libero orci sodales risus, in tincidunt urna libero quis turpis. Donec sit amet neque mattis, lacinia ligula a, ornare felis. Mauris malesuada sed purus nec tempus.",
+      "shortDescription": "Aprenda Docker do básico ao avançado."
+    },
+    {
+      "id": 4,
+      "name": "Curso de Angular",
+      "image": "/images/programacao.jpg",
+      "coordinator": "Armênio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at eros convallis, congue justo ut, iaculis ex. Proin vel sollicitudin purus. Sed id blandit risus. In vitae ultricies nisi. Phasellus nibh orci, pellentesque sit amet molestie sed, condimentum id est. Pellentesque a iaculis est. Suspendisse potenti. Integer sed nisl laoreet, rhoncus ex eu, auctor tellus. Fusce nunc nibh, tempus id hendrerit eu, vestibulum in libero. Aenean a justo ac urna tempus elementum non ac ligula. Nullam aliquet, lectus posuere vehicula ullamcorper, libero orci sodales risus, in tincidunt urna libero quis turpis. Donec sit amet neque mattis, lacinia ligula a, ornare felis. Mauris malesuada sed purus nec tempus.",
+      "shortDescription": "Aprenda Angular do básico ao avançado."
+    },
+    {
+      "id": 5,
+      "name": "Curso de React",
+      "image": "/images/programacao.jpg",
+      "coordinator": "Armênio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at eros convallis, congue justo ut, iaculis ex. Proin vel sollicitudin purus. Sed id blandit risus. In vitae ultricies nisi. Phasellus nibh orci, pellentesque sit amet molestie sed, condimentum id est. Pellentesque a iaculis est. Suspendisse potenti. Integer sed nisl laoreet, rhoncus ex eu, auctor tellus. Fusce nunc nibh, tempus id hendrerit eu, vestibulum in libero. Aenean a justo ac urna tempus elementum non ac ligula. Nullam aliquet, lectus posuere vehicula ullamcorper, libero orci sodales risus, in tincidunt urna libero quis turpis. Donec sit amet neque mattis, lacinia ligula a, ornare felis. Mauris malesuada sed purus nec tempus.",
+      "shortDescription": "Aprenda React do básico ao avançado Aprenda React do básico ao avançado."
+    },
+    {
+      "id": 6,
+      "name": "Curso de AWS",
+      "image": "/images/programacao.jpg",
+      "coordinator": "Armênio",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at eros convallis, congue justo ut, iaculis ex. Proin vel sollicitudin purus. Sed id blandit risus. In vitae ultricies nisi. Phasellus nibh orci, pellentesque sit amet molestie sed, condimentum id est. Pellentesque a iaculis est. Suspendisse potenti. Integer sed nisl laoreet, rhoncus ex eu, auctor tellus. Fusce nunc nibh, tempus id hendrerit eu, vestibulum in libero. Aenean a justo ac urna tempus elementum non ac ligula. Nullam aliquet, lectus posuere vehicula ullamcorper, libero orci sodales risus, in tincidunt urna libero quis turpis. Donec sit amet neque mattis, lacinia ligula a, ornare felis. Mauris malesuada sed purus nec tempus.",
+      "shortDescription": "Aprenda AWS do básico ao avançado."
+>>>>>>> 6d06d48368ff11e06ee50b9c67626d2278343390
+    }
+  ],
+  "inscriptions": [
+    {
+<<<<<<< HEAD
+      "name": "Teste",
+      "email": "teste@gmail.com",
+      "eventId": 4,
+      "id": 1
+    },
+    {
+      "name": "Leo",
+      "email": "leonardo@gmail.com",
+      "eventId": 4,
+      "id": 2
+=======
+      "name": "Victor",
+      "email": "victor@victor.com",
+      "courseId": 1,
+      "id": 1
+>>>>>>> 6d06d48368ff11e06ee50b9c67626d2278343390
+    }
+  ]
+}
