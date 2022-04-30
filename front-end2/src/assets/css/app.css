@@ -1,0 +1,6 @@
+.bg_image{
+  background-image: url('../img/background.png');
+  background-size: cover;
+  height: auto;
+  color: #f5f5f5;
+}
