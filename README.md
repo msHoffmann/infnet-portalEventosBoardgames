@@ -10,4 +10,4 @@
 <p>Lista de Eventos do Portal de Eventos de Boargames onde as pessoas podem visualizar os próximos eventos e se inscreverem.</p>
 <a href="eventos-boardgames-6uatbcb6f-mshoffmann.vercel.app"><strong>Acessar demonstração</strong></a>
 <p>Frania Lopes Hoffmann - franiahoffmann@gmail.com</p>
-<a href="https://www.linkedin.com/in/frania-lopes-hoffmann/"></a>
+<a href="http s://www.linkedin.com/in/frania-lopes-hoffmann/"></a>
