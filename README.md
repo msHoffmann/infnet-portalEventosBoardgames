@@ -5,3 +5,4 @@
   </a>
 
   <h3 align="center">Portal de Eventos de Boardgames</h3>
+    <p>Venha conhecer as novidades da sua região.</p>
