@@ -45,6 +45,18 @@
       "email": "leonardo@gmail.com",
       "eventId": 4,
       "id": 2
+    },
+    {
+      "name": "Frania",
+      "email": "frania@frania.com",
+      "eventId": 1,
+      "id": 3
+    },
+    {
+      "name": "Teste",
+      "email": "teste@gmail.com",
+      "eventId": 1,
+      "id": 4
     }
   ]
 }

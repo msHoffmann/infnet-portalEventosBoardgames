@@ -6,6 +6,7 @@ import { Loading } from "../../components/Loading";
 import { NotFoundView } from "../NotFound";
 import { InscriptionsForm } from "../EventsDetail/inscriptionsForm";
 import { Inscriptions } from "../EventsDetail/inscriptions";
+import { getEventById } from "../../services/Events.services.js"
 
 export function EventsDetailView() {
   const { id } = useParams();
@@ -13,16 +14,10 @@ export function EventsDetailView() {
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState();
   const fetchEvent = useCallback(async () => {
+    console.log(getEventById)
     try {
-      const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/events/${id}?_embed=inscriptions`
-      );
-      if (!response.ok) {
-        throw new Error("Response not ok.");
-      }
-      const data = await response.json();
+      const data = await getEventById(id)
       setEvent(data);
-      console.log(data);
       setLoading(false);
     } catch (err) {
       const message =

@@ -206,6 +206,12 @@ h2{
   }
 }
 
+@media (min-width: 810px){
+  .row{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+}
 @media (min-width: 811px){
   .imgcarousel{
     height: 450px;
