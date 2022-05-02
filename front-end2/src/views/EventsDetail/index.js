@@ -7,6 +7,7 @@ import { NotFoundView } from "../NotFound";
 import { InscriptionsForm } from "../EventsDetail/inscriptionsForm";
 import { Inscriptions } from "../EventsDetail/inscriptions";
 import { getEventById } from "../../services/Events.services.js"
+import styled from "styled-components"
 
 export function EventsDetailView() {
   const { id } = useParams();
@@ -39,7 +40,7 @@ export function EventsDetailView() {
   }
   return (
     <Layout className="bg_image">
-      <Container className="course-detail-container bg-white container-eventos">
+      <ContainerStyled>
         {errorMsg ? (
           <Alert variant="danger" className="mt-3">
             {errorMsg}
@@ -57,7 +58,18 @@ export function EventsDetailView() {
             <InscriptionsForm eventId={id} onRegister={fetchEvent} />
           </>
         )}
-      </Container>
+      </ContainerStyled>
     </Layout>
   );
 }
+
+const ContainerStyled = styled(Container)`
+max-width: 900px;
+background-color: white;
+box-shadow: 2px 10px 10px 10px rgba(15, 15, 15, 0.3);
+padding: 1rem 1rem;
+margin-top: 20px;
+margin-bottom: 20px;
+` 
+
+ 

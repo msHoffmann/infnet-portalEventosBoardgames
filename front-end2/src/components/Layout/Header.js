@@ -1,16 +1,17 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img/logo-teste.png";
+import styled from 'styled-components'
 
 export function Header() {
   return (
     <header>
-      <Navbar expand="md" className="main-navbar">
+      <NavBarStyled expand="md">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img src={Logo} alt="Boardgames" width={140} height={80} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-header" />
+          <NavBarToggleStyled aria-controls="navbar-header" />
           <Navbar.Collapse id="navbar-header">
             <Nav className="ms-auto">
               <div>
@@ -34,7 +35,17 @@ export function Header() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </NavBarStyled>
     </header>
   );
 }
+
+
+const NavBarStyled = styled(Navbar)`
+  background-color: rgb(52, 12, 54);
+`
+
+const NavBarToggleStyled = styled(Navbar.Toggle)`
+  background: #FFF;
+  border: none;
+}`

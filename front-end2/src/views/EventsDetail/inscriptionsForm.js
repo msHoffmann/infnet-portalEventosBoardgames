@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import { useState } from "react";
 import { Alert, Button, Form } from "react-bootstrap";
 import { createInscription } from "../../services/Inscriptions.services";
@@ -42,13 +43,12 @@ export function InscriptionsForm({ eventId, onRegister }) {
     <>
       <h2>Inscreva-se!</h2>
       {showSucess && (
-        <Alert
-          className="alerta"
+        <AlertStyled
           dismissible
           onClose={() => setShowSucess(false)}
         >
           Sua inscrição foi adicionada com sucesso!
-        </Alert>
+        </AlertStyled>
       )}
       {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
       <Form onSubmit={handleSubmit}>
@@ -80,3 +80,6 @@ export function InscriptionsForm({ eventId, onRegister }) {
     </>
   );
 }
+
+const AlertStyled = styled(Alert)`
+color: rgb(59, 9, 223);`

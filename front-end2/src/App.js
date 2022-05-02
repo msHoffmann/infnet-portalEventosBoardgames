@@ -4,6 +4,7 @@ import { NotFoundView } from "./views/NotFound";
 import { Login } from "./views/Login";
 import { EventsView } from "./views/Events";
 import { EventsDetailView } from "../src/views/EventsDetail";
+import { DashboardView } from "./views/Dashboard";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="eventos/:id" element={<EventsDetailView />} />
       <Route path="eventos" element={<EventsView />} />
+      <Route patth='/portal' element={<DashboardView />}/>
     </Routes>
   );
 }

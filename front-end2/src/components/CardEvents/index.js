@@ -1,10 +1,11 @@
 import Card from "react-bootstrap/Card";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
 
 export function CardEvents({ events }) {
   return (
-    <Card style={{ width: "18rem" }}>
+    <CardStyled style={{ width: "18rem" }}>
       <Card.Img variant="top" src={events.image} alt={events.name} />
       <Card.Body className="d-flex flex-column">
         <Card.Title>{events.name}</Card.Title>
@@ -19,8 +20,20 @@ export function CardEvents({ events }) {
           Inscreva-se!
         </Button>
       </Card.Body>
-    </Card>
+    </CardStyled>
   );
 }
 
 export default CardEvents;
+
+
+const CardStyled = styled(Card)`
+& card-img-top {
+  height: 130px;
+}
+& card-text {
+  color: rgb(1, 14, 14);
+}
+`
+
+

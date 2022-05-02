@@ -1,6 +1,8 @@
+import { apiUrl } from "./api.services"
+
 export const getEvents = async () => {
     const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/events`)
+        `${apiUrl}/events`)
       if (!response.ok) {
         throw new Error("Response not ok.")
       }
@@ -11,7 +13,7 @@ export const getEvents = async () => {
 
 export const getEventById = async (eventId) => {
     const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/events/${eventId}?_embed=inscriptions`
+        `${apiUrl}/events/${eventId}?_embed=inscriptions`
       );
       if (!response.ok) {
         throw new Error("Response not ok.");

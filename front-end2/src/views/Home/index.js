@@ -6,12 +6,13 @@ import Essen from "../../assets/img/essen.jpg";
 import Diversao from "../../assets/img/diversao.jpg";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
+import styled from "styled-components";
 
 export function HomeView() {
   return (
     <Layout className="bg_image">
       <Container className="container-home">
-        <div className="shadow border p-4 p-md-5 my-3 banner-home d-md-flex align-items-center portal">
+        <BannerHome className="shadow border p-4 p-md-5 my-3 banner-home d-md-flex">
           <div>
             <h1>Bem-vindo(a) ao Portal de Eventos de Boardgames!</h1>
             <p class="pp">Fique por dentro das novidades da sua região.</p>
@@ -24,7 +25,7 @@ export function HomeView() {
               Eventos
             </Button>{" "}
           </div>
-        </div>
+        </BannerHome>
         <Carousel>
           <Carousel.Item>
             <img
@@ -78,3 +79,18 @@ export function HomeView() {
     </Layout>
   );
 }
+
+
+const BannerHome = styled.div`
+padding: 4px;
+align-items: center;
+display: flex;
+ & h1 {
+  color: #2a0810;
+}
+& p {
+  font-size: 1.125rem;
+}
+& > div {
+  flex: 1;
+}`
