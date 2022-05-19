@@ -6,8 +6,8 @@ import { Loading } from "../../components/Loading";
 import { NotFoundView } from "../NotFound";
 import { InscriptionsForm } from "../EventsDetail/inscriptionsForm";
 import { Inscriptions } from "../EventsDetail/inscriptions";
-import { getEventById } from "../../services/Events.services.js"
-import styled from "styled-components"
+import { getEventById } from "../../services/Events.service.js";
+import styled from "styled-components";
 
 export function EventsDetailView() {
   const { id } = useParams();
@@ -15,9 +15,9 @@ export function EventsDetailView() {
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState();
   const fetchEvent = useCallback(async () => {
-    console.log(getEventById)
+    console.log(getEventById);
     try {
-      const data = await getEventById(id)
+      const data = await getEventById(id);
       setEvent(data);
       setLoading(false);
     } catch (err) {
@@ -39,7 +39,7 @@ export function EventsDetailView() {
     return <NotFoundView />;
   }
   return (
-    <Layout className="bg_image">
+    <LayoutStyled>
       <ContainerStyled>
         {errorMsg ? (
           <Alert variant="danger" className="mt-3">
@@ -59,17 +59,20 @@ export function EventsDetailView() {
           </>
         )}
       </ContainerStyled>
-    </Layout>
+    </LayoutStyled>
   );
 }
 
 const ContainerStyled = styled(Container)`
-max-width: 900px;
-background-color: white;
-box-shadow: 2px 10px 10px 10px rgba(15, 15, 15, 0.3);
-padding: 1rem 1rem;
-margin-top: 20px;
-margin-bottom: 20px;
-` 
-
- 
+  background-color: white;
+  max-width: 900px;
+  box-shadow: 2px 10px 10px 10px rgba(15, 15, 15, 0.3);
+  padding: 1rem 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
+const LayoutStyled = styled(Layout)`
+  background-image: url("../img/background.png");
+  background-size: cover;
+  height: auto;
+`;

@@ -1,4 +1,4 @@
-import { apiUrl } from "./api.services"
+import { apiUrl } from "./Api.service.js"
 
 export const getEvents = async () => {
     const response = await fetch(

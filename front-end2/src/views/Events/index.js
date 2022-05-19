@@ -3,7 +3,7 @@ import CardEvents from "../../components/CardEvents";
 import React, { useEffect, useState } from "react";
 import { Loading } from "../../components/Loading";
 import { Alert, Container, Col, Row } from "react-bootstrap";
-import { getEvents } from "../../services/Events.services"
+import { getEvents } from "../../services/Events.service"
 import styled from "@emotion/styled";
 
 let events = [];
@@ -63,13 +63,14 @@ const RowStyled = styled(Row)`
 `
 
 const ContainerStyled = styled(Container)`
-background-image: '../../assets/img/2event.jpg';
 display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
 max-width: 80%;
 `
+
+
 const LayoutSytled = styled(Layout)
 `
 background-image: url('../img/background.png');

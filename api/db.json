@@ -9,11 +9,11 @@
       "image": "/img/catan.jpg"
     },
     {
+      "id": 2,
       "name": "Mundial Essen",
-      "company": "Essen Alemanha",
+      "company": "Diversas",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "shortdescription": "Evento em Maio.",
-      "id": 2,
       "image": "/img/essen.jpg"
     },
     {
@@ -64,5 +64,21 @@
       "eventId": 1,
       "id": 5
     }
+  ],
+  "users": [
+    {
+      "email": "exemplo@exemplo.com",
+      "password": "$2a$10$O7VU0CEw0Jsk/zcxaUE0QOcF1IVs/LZ7Rpr.I597RFTf13xO.H2zm",
+      "name": "Exemplo",
+      "type": 2,
+      "id": 1
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$W5sdJ.7A84G16AaJMO6SfecLTen8WeNnET36CgpdnIqQ.Kle6ZAze",
+      "name": "Administrador",
+      "type": 1,
+      "id": 2
+    }
   ]
-}
+} 

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { useState } from "react";
 import { Alert, Button, Form } from "react-bootstrap";
-import { createInscription } from "../../services/Inscriptions.services";
+import { createInscription } from "../../services/Inscriptions.service";
 
 const initialFormData = {
   userName: "",

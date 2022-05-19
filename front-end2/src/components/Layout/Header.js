@@ -48,4 +48,4 @@ const NavBarStyled = styled(Navbar)`
 const NavBarToggleStyled = styled(Navbar.Toggle)`
   background: #FFF;
   border: none;
-}`
+`

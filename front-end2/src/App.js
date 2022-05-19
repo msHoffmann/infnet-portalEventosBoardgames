@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { HomeView } from "./views/Home";
 import { NotFoundView } from "./views/NotFound";
-import { Login } from "./views/Login";
+import { LoginView } from "./views/Login";
 import { EventsView } from "./views/Events";
 import { EventsDetailView } from "../src/views/EventsDetail";
 import { DashboardView } from "./views/Dashboard";
@@ -11,10 +11,10 @@ function App() {
     <Routes>
       <Route path="/" element={<HomeView />} />
       <Route path="*" element={<NotFoundView />} />
-      <Route path="/login" element={<Login />} />
       <Route path="eventos/:id" element={<EventsDetailView />} />
       <Route path="eventos" element={<EventsView />} />
-      <Route patth='/portal' element={<DashboardView />}/>
+      <Route path='/portal' element={<DashboardView />}/>
+      <Route path='/portal/login' element={<LoginView />}/>
     </Routes>
   );
 }
