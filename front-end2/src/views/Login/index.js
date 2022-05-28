@@ -7,7 +7,7 @@ export function LoginView () {
     return (
         
         <Background className="bg-dark d-flex">
-        <Container className="bg-white rounded p-3 p-md-5">
+        <Container className= "rounded p-3 p-md-5">
             <AuthForm />
             </Container>
         </Background>

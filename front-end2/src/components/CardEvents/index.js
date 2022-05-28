@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 
-export function CardEvents({ events }) {
+export default function CardEvents({ events }) {
   return (
     <CardStyled style={{ width: "18rem" }}>
       <Card.Img variant="top" src={events.image} alt={events.name} />
@@ -24,9 +24,6 @@ export function CardEvents({ events }) {
   );
 }
 
-export default CardEvents;
-
-
 const CardStyled = styled(Card)`
 & card-img-top {
   height: 130px;
@@ -35,5 +32,3 @@ const CardStyled = styled(Card)`
   color: rgb(1, 14, 14);
 }
 `
-
-

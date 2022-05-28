@@ -1,7 +1,13 @@
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
+import { createUser } from "../../services/Users.service";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { userLogin } from "../../store/User/user.actions";
 
-export function RegisterForm() {
+export function RegisterForm({ redirectAfterLogin }) {
+    const [isSubmiting, setIsSubmiting] = useState(false)
     const [formData, setFormData] = useState({
         name:'',
         email: '',
@@ -13,9 +19,27 @@ export function RegisterForm() {
             [event.target.name]: event.target.value
         })
     }
-    const handleSubmit = (event) => {
+    useDispatch()
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const handleSubmit = async (event) => {
         event.preventDefault()
-        console.log(FormData)
+        try {
+          setIsSubmiting(true)
+          const userData = await createUser(formData)
+          dispatch(userLogin(userData))
+          if (redirectAfterLogin) {
+            navigate('/portal')
+          }
+        } catch (error) {
+          console.log(error)
+          const message = error.message === 'Email already exists'
+          ? 'Este E-mail já está em uso.'
+          : 'Falha ao fazer Cadastro. Tente novamente.'
+          toast.error(message)
+          setIsSubmiting(false)
+
+        }
     }
     return (
         <Form onSubmit={handleSubmit}>
@@ -50,11 +74,10 @@ export function RegisterForm() {
             onChange={handleChange}
             name="password"
             required
+            minLength={4}
           />
         </Form.Group>
-        <Button type="submit">
-          Criar Conta
-        </Button>
+        <Button type='submit' disabled={isSubmiting}>Criar Conta</Button>
         </Form>
 
     )

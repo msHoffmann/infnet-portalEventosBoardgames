@@ -2,8 +2,12 @@ import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img/logo-teste.png";
 import styled from 'styled-components'
+import { useSelector } from "react-redux";
+import { selectIsUserLoggedIn } from "../../store/User/user.selectors"
+
 
 export function Header() {
+  const userLoggedIn = useSelector(selectIsUserLoggedIn)
   return (
     <header>
       <NavBarStyled expand="md">
@@ -22,7 +26,7 @@ export function Header() {
                   className="text-uppercase"
                 >
                   Home
-                </Button>{" "}
+                </Button>
                 <Button
                   as={Link}
                   to="/eventos"
@@ -30,9 +34,25 @@ export function Header() {
                   className="text-uppercase"
                 >
                   Eventos
-                </Button>{" "}
+                </Button>
+              {userLoggedIn ? (<Button
+                  as={Link}
+                  to="/portal"
+                  variant="outline-warning"
+                  className="text-uppercase"
+                >
+                  Acessar Portal
+                </Button>) : (<Button
+                  as={Link}
+                  to="/portal/login"
+                  variant="outline-warning"
+                  className="text-uppercase"
+                >
+                  Login
+                </Button>)}
               </div>
             </Nav>
+
           </Navbar.Collapse>
         </Container>
       </NavBarStyled>
