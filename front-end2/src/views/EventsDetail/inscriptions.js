@@ -14,9 +14,9 @@ export function Inscriptions({ inscriptions }) {
             </tr>
           </thead>
           <tbody>
-            {inscriptions.map((inscription) => (
+            {inscriptions.map((inscription, index) => (
               <tr key={inscription.id}>
-                <td>{inscription.id}</td>
+                <td>{index + 1}</td>
                 <td>{inscription.name}</td>
                 <td>{inscription.email}</td>
               </tr>
