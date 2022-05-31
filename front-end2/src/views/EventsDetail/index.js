@@ -48,7 +48,7 @@ export function EventsDetailView() {
         ) : (
           <>
             <h1 className="text-center mb-10">{event.name}</h1>
-            <img src={event.image} className="img-fluid img-carousel" />
+            <img src={event.image} className="img-fluid img-carousel" alt="Imagem do Evento" />
             <p className="pp">
               <strong>Empresa:</strong> {event.company}
             </p>
