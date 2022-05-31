@@ -1,6 +1,6 @@
 <br />
 <div align="center">git 
-  <a href="https://courageous-hamster-04d02e.netlify.app/">
+  <a href="https://polite-rolypoly-f0870d.netlify.app">
     <img src="github/header-readme.png" alt="Logo Eventos de Boardgames" />
   </a>
 
