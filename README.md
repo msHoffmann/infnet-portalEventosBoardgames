@@ -20,9 +20,11 @@
   <summary>Sumário</summary>
   <ol>
     <li><a href="#sobre-o-projeto">Projeto</a></li>
+    <li><a href="#processo-de-trabalho">Processo de trabalho</a></li>
     <li>
       <ul>
         <li><a href="#pré-requisitos">Pré-requisitos</a></li>
+                <li><a href="#executando-a-api">Executando a API</a></li>
         <li><a href="#executando-o-site">Executando o Site</a></li>
       </ul>
     </li>
@@ -55,20 +57,63 @@ Os recursos implementados foram:
 
 A demonstração do site funcionando está disponível no link: https://polite-rolypoly-f0870d.netlify.app/
 
+# Processo de Trabalho
+
+A primeira parte começou com um problema: empresas do seguimento de Boardgames que precisam exibir seus eventos para o seu público-alvo e aceitar inscrições para participação dos mesmos.
+
+Seguindo a proposta do Bootcamp, a solução do problema foi implementada em duas etapas: a primeira mais simples que permite exibir os eventos e receber inscrições. A segunda que incrementa as funcionalidades através do recurso de autenticação e gestão dos eventos.
+
+Para manter o site em pleno funcionamento enquanto a segunda etapa era desenvolvida, foi criada uma `branch` no repositório para a parte 2. Apenas após finalizar a segunda etapa que o código foi mesclado para a `branch` `main`.
+
+Como o foco deste projeto era o desenvolvimento do front-end, foi utilizado a biblioteca `json-server` para criar uma api falsa que recebe as requisições do front.
+
+A gestão do projeto foi feita com base no ciclo PDCA (Planejar, Executar, Checar, Agir) e as tarefas foram repartidas com base no quadro Kanban. 
+
 
 ## Pré-requisitos
 
-Antes de seguir o passo a passo para executar o projeto é preciso ter instalado no computador o [Git](https://git-scm.com/) e um servidor HTTP local (recomendo a utilização da extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) do [Visual Studio Code](https://code.visualstudio.com/)).
+Instale no computador o [Git](https://git-scm.com/), o [Node.js](https://nodejs.org) e o gerenciador de pacotes `npm` (instalado junto com o Node.js).
 
-## Executando o site
+## Executando a API
+
+A API precisa estar funcionando para o site ser executado. Siga os passos abaixo para executá-la:
 
 - Faça o download do código fonte no computador:
 ```sh
-git clone https://github.com/msHoffmann/infnet-website.git
+git clone https://github.com/msHoffmann/infnet-portalEventosBoardgames.git
 ```
 
-- Abra o projeto no VS Code e execute a extensão Live Server ou coloque os arquivos no servidor HTTP desejado.
+- Com o terminal na pasta `api` execute os comandos abaixo para instalar as dependências e iniciar a API:
+```sh
+npm install
+npm run start-dev
+```
 
+## Executando o site
+
+- Vá até a pasta `front-end`;
+- Duplique o arquivo `.env.example` e renomeie para `.env.local`. Na variável `REACT_APP_API_URL` coloque o endereço em que a api está rodando (Ex: http://localhost:3001);
+- Com o terminal na pasta `front-end` execute os comandos abaixo para instalar as dependências e iniciar o site:
+```sh
+npm install
+npm run start
+```
+
+## Usuários pré-cadastrados
+
+O banco de dados da API tem os seguintes usuários de demonstração:
+
+### Administrador
+
+**E-mail:** admin@admin.com
+
+**Senha:** 123456
+
+### Aluno
+
+**E-mail:** teste@boardgamer.com
+
+**Senha:** 123456
 
 # Tecnologias
 - HTML5
